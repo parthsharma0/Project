@@ -3,95 +3,143 @@
 <head>
   <title>My Website</title>
   <style>
-    .card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin: 20px;
-    }
+   /* Default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-    
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0 ;
-            
-        }
+header {
+  border-bottom: 2px solid #e7e7e7;
+  padding: 1.5rem 0;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+}
 
-        header {
-            border-bottom: 2px solid #e7e7e7;
-            padding: 1.5rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+header h1 {
+  margin: 0;
+}
 
-        header h1 {
-            margin: 0;
-        }
+main {
+  padding: 2rem 0;
+}
 
-        main {
-            padding: 2rem 0;
-        }
+footer {
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 1rem;
+  color: #6c6c6c;
+}
 
-        main h2, main p {
-            margin: 0;
-        }
+.button-container {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        main h2 {
-            color: #313444;
-            margin-bottom: 0.5rem;
-        }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-        main p {
-            color: #002b55;
-        }
+.button:hover {
+  background-color: #3e8e41;
+}
 
-        footer {
-            text-align: center;
-            border-top: 1px solid #e7e7e7;
-            padding-top: 1rem;
-            color: #6c6c6c;
-        }
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px #3e8e41;
+  transform: translateY(1px);
+}
 
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-        }
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
 
-        .button {
-            background-color: #4CAF50;
-            border: none;
-            color: #fff;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
-            text-decoration: none;
-        }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
 
-        .button:hover {
-            background-color: #3e8e41;
-        }
+  .button {
+    width: 100%;
+  }
 
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 1px #3e8e41;
-            transform: translateY(1px);
-        }
-        .colour{
-            color: blue;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+  footer {
+    padding: 10px;
+  }
+
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  header img {
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+    width: 20%;
+  }
+}
+.courses .alumini .history .location{
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
  
+h3{
+  text-decoration: underline;
+  width: 100px;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+header{
+  margin-left: 20px;
+}
+p{
+  margin-left: 20px;
+}
+.colour{
+  margin-left: 20px;
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -112,7 +160,7 @@
 
 <header>
     <h1>CIE<span class="colour">Direct</span></h1>
-    <img src="https://direct.cie.org.uk/images/cielogo.png" alt="Logo" width="140">
+    <img src="https://direct.cie.org.uk/images/cielogo.png" alt="Logo" width="240">
 </header>
 
 
@@ -120,14 +168,37 @@
 <main>
     <div class="container">
     <h2>CIE Direct is the online tool for Cambridge Exams Officers</h2>
-    <br> <br> <br>
+    <br> 
 
     <p>Cambridge Assessment International Education</p>
-    <br><br>
+    <br>
     <p>
         To help manage the volume of visitors during peak times, we have created a new results page.
         Select the relevant login below.
     </p>
+    <div class="history">
+      <h3> History </h3>
+      <p> Founded in 1209, Cambridge is the second-oldest university in the English-speaking world. It was formed by scholars who left the University of Oxford after a dispute.</p>
+    </div>
+    <br>
+    <div class="location">
+      <h3> Location </h3>
+      <p>The university is located in Cambridge, England, about 50 miles north of London. It is made up of numerous colleges spread throughout the city.
+        The university has excellent facilities, including libraries, laboratories, and sports facilities. Its libraries, such as the Cambridge University Library, are renowned for their extensive collections.
+      </p>
+    </div>
+    <br>
+    <div class="alumini">
+      <h3> Alumini </h3>
+      <p>  Cambridge has a distinguished list of alumni, including many notable figures in various fields, such as politics, science, literature, and the arts.
+        Cambridge is a major center for research, with a focus on areas such as science, technology, medicine, and the humanities. The university has numerous research institutes and centers
+      </p>
+    </div>
+    <br>
+    <div class="courses">
+      <h3> Courses </h3>
+      <p>The university offers a wide range of undergraduate and postgraduate courses in various fields, including arts, sciences, humanities, and engineering.</p>
+    </div>
     <br><br>
     <div class="button-container">
         <a href="./login.html" class="button" style="background-color: #2abed8;">Login to access your results files</a>
@@ -139,37 +210,32 @@
     </p>
 </main>
 
-
-
-
-
-
-
-<footer style="background-color: rgb(18, 10, 10); padding: 0px; font-size: 14px;width: 100vw;">
+<footer style="background-color: #2abed7; padding: 0px; font-size: 14px;width: 100vw; border: 2px solid black; height: 200px;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <div>
-      <ul style="list-style: none;  padding: 0;align-items: center;margin-left: 5vw;">
+      <ul style="list-style: none;  padding: 10px;align-items: center;margin-left: 7vw;">
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">About us</a></li>
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">What we do</a></li>
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Help</a></li>
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Our social media channels</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Useful links</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Join Cambridge</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Book a training course</a></li>
+        <!-- <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Useful links</a></li> -->
+        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Join Cambridge</a></li><br><br>
+        <img src="https://direct.cie.org.uk/images/cielogo.png" alt="Logo" width="240">
+        <!-- <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Book a training course</a></li>
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Communications toolkit</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Log in to secure sites</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Careers</a></li>
+         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Log in to secure sites</a></li> -->
+        <!-- <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Careers</a></li> --> 
       </ul>
     </div>
     <div>
-      <ul style="list-style: none; margin-right: 5vw; padding: 0;">
+      <ul style="list-style-type: none; margin-right: 5vw; padding: 0;">
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">CAMBRIDGE UNIVERSITY PRESS & ASSESSMENT</a></li>
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Cambridge University Press & Assessment 2024</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Sitemap</a></li>
+        <!-- <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Sitemap</a></li> -->
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">ISO 9001 Certificate</a></li>
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Privacy and legal</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Accessibility and standards</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Statement on Modern Slavery</a></li>
+        <!-- <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Accessibility and standards</a></li>
+        <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Statement on Modern Slavery</a></li> -->
         <li><a href="#" style="color: white; text-decoration: none; margin-bottom: 10px;">Contact us</a></li>
       </ul>
     </div>
